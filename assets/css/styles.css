@@ -93,7 +93,7 @@ NAVEGACION
     HEADER
      =============================*/
 .image-bg{
-    background-image: url('../img/Imagen-background.jpg');
+    background-image: url('../img/entrepreneur-593372_1920.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -143,6 +143,11 @@ DESCRIPCION
 /*=============================== 
 EXPERIENCIA
 =============================*/
+.experiencia{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
 .experiencia h2{
     font-size: 5rem;
     color: var(--colorNegro);
@@ -166,6 +171,37 @@ EXPERIENCIA
 }
 
 /*=============================== 
+HABILIDADES
+=============================*/
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--colorBlanco);
+    
+}
+
+.carousel-indicators {
+    top: 100px;
+}
+
+.habilidades-iconos{
+    font-size: 50px;
+    color: var(--colorBlanco);
+}
+
+.habilidades{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px 0px;
+    background-color: var(--colorAzul);
+}
+
+.habilidades-contenido{
+    padding: 40px 0;
+}
+
+/*=============================== 
 ULTIMOS TRABAJOS
      =============================*/
 .bg-principal h2{
@@ -184,7 +220,7 @@ ULTIMOS TRABAJOS
 
 .enlace-trabajos{
     font-size: 12px;
-    
+    background-color: var(--colorAzul);
 }
 
 /* TOOLTIP */
@@ -196,9 +232,43 @@ ULTIMOS TRABAJOS
 /*=============================== 
 CONTACTO
      =============================*/
+.contacto{
+    padding-top: 60px;
+}
 .contacto-hr{
     width: 100px;
     border: 1px solid var(--colorNegro);
-    /* padding: 0;
-    margin: 0; */
+
 }
+
+/*=============================== 
+FOOTER
+     =============================*/
+.footer-color{
+    color: var(--colorBlanco);
+    padding: 60px 0;
+}
+
+.nombre h2{
+    font-family: var(--font-Icono);
+    font-weight: 400;
+}
+
+.redes-sociales i{
+    font-size: 6.4rem;
+    color: var(--colorBlanco);
+}
+
+.redes-sociales a i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+
+

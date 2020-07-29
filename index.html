@@ -29,7 +29,7 @@
 </head>
 <body>
     <!-- NAVEGACION -->
-    <div class="container-fluid bg-principal">
+    <div class="container-fluid bg-principal sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark nav-contenido">
                 <a class="navbar-brand p-0 text-white" href="/">JrGp</a>
@@ -38,10 +38,12 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto nav-link">
-                      <a class="nav-item nav-link text-center text-white mr-4 " href="#">Sobre mi </a>
-                      <a class="nav-item nav-link text-center text-white mr-4" href="#">Experiencia</a>
-                      <a class="nav-item nav-link text-center text-white mr-4" href="#">Trabajos</a>
-                      <a class="nav-item nav-link text-center text-white mr-4" href="#">Contacto</a>
+                      <a class="nav-item nav-link text-center text-white mr-4 " href="#inicio">Inicio </a>
+                      <a class="nav-item nav-link text-center text-white mr-4 d-none d-md-block" href="#descripcion">Sobre mi </a>
+                      <a class="nav-item nav-link text-center text-white mr-4 d-none d-md-block" href="#habilidades">Habilidades </a>
+                      <a class="nav-item nav-link text-center text-white mr-4" href="#experiencia">Experiencia</a>
+                      <a class="nav-item nav-link text-center text-white mr-4" href="#trabajos">Trabajos</a>
+                      <a class="nav-item nav-link text-center text-white mr-4" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </nav>
@@ -49,7 +51,7 @@
     </div>  
 
     <!-- HEADER -->
-    <header class="container-fluid image-bg mb-5">
+    <header id="inicio" class="container-fluid image-bg mb-5">
         <div class="contenido-header">
             <h2 class="text-white">Yo soy</h2>
             <h1 class="text-white">José Guerra</h1>
@@ -57,7 +59,7 @@
     </header>
 
     <!-- Descripcion -->
-    <section class="container descripcion d-none d-md-block">
+    <section  id="descripcion" class="container descripcion d-none d-md-block">
         <h3 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit asperiores quibusdam beatae sint architecto unde sunt aliquam velit repellat officiis porro ab eos sapiente, non perspiciatis sed alias, culpa inventore!</h3>
         <hr class="division">
         <div class="d-flex justify-content-between">
@@ -67,8 +69,65 @@
 
     </section>
 
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="container-fluid habilidades d-none d-md-block">
+        <h2 class="text-center text-white">Habilidades</h2>
+        <hr class="color-white">
+        <div class="container habilidades-contenido">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i  class="fab fa-html5 habilidades-iconos"></i>
+                                <p class="text-white display-4">HTML5</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i  class="fab fa-css3-alt habilidades-iconos"></i>
+                                <p class="text-white display-4">CCS3</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fab fa-js habilidades-iconos"></i>
+                                <p class="text-white display-4">JavaScripts</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fab fa-react habilidades-iconos"></i>
+                                <p class="text-white display-4">ReactJs</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fab fa-vuejs habilidades-iconos"></i>
+                                <p class="text-white display-4">VueJs</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fab fa-angular habilidades-iconos"></i>
+                                <p class="text-white display-4">Angular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
      <!-- EXPERIENCIA -->
-     <section class="container experiencia mb-5">
+     <section id="experiencia" class="container experiencia">
         <h2 class="text-center mt-5 text-uppercase">Mi experiencia</h2>
         <hr class="division">
         <div class="row experiencia-contenido">
@@ -96,7 +155,7 @@
      </section>
 
       <!-- ULTIMOS TRABAJOS -->
-      <section class="container-fluid bg-principal">
+      <section id="trabajos" class="container-fluid bg-principal">
         <h2 class="text-center text-white pt-5 text-uppercase">Mis últimos trabajos</h2>
         <hr class="color-white">
         <div class="container">
@@ -180,15 +239,29 @@
       </section>
 
        <!-- CONTACTO -->
-      <section class="container">
+      <section id="contacto" class="container contacto">
         <h2 class="text-center mt-5 text-uppercase">Contacto</h2>
         <hr class="contacto-hr">
 
         <div class="typeform-widget" data-url="https://form.typeform.com/to/HHc52nSB" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=HHc52nSB&utm_source=typeform.com-01EEBTVFP3VVE2ETMZK7QQRGP1-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
       </section>
 
-   
+      <!-- FOOTER -->
+      <footer class="container-fluid bg-principal">
+          <div class="contenedor d-flex flex-column flex-md-row justify-content-md-between align-items-center align-center footer-color col-12">
+            <div class="nombre">
+                <h2 >José<span>Guerra</span></h2>
+            </div>
+            <div class="redes-sociales mt-5 mt-md-0">
+                <a href="https://github.com/JoseTeque" target="_blank"><i class="fab fa-github-square mr-5"></i></a>
+                <a href="https://www.linkedin.com/in/jose-guerra-4a4293171/" target="_blank"><i class="fab fa-linkedin  mr-5"></i></a>
+                <a href="https://twitter.com/JoseGue49470523" target="_blank"><i class="fab fa-twitter-square mr-5"></i></a>
+                <a href="https://www.facebook.com/teque.guerra" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+          </div>
+      </footer>
 
+   
     <!--=============================== 
         JS
     =============================-->
